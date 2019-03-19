@@ -1,1 +1,2 @@
 ### ROTEIROS DA DISCIPLINA DE LABORATÓRIO DE DADOS E ALGORITMOS
+![Smoothsort](https://user-images.githubusercontent.com/40633369/54575820-67825580-49d4-11e9-8e6d-3336d7d323f1.gif)
