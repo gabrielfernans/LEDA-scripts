@@ -1,0 +1,9 @@
+Anotações - LEDA
+
+1. Parar o método com o "return" nas seguintes situações:
+
+• Índice da direita maior que o da direita
+• Array null
+• Array vazio
+• Tamanho do array menor que o índice da direita
+• Tamanho do array menor que o índice da esquerda
