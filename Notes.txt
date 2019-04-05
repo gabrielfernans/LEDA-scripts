@@ -7,3 +7,4 @@ Anotações - LEDA
 • Array vazio
 • Tamanho do array menor que o índice da direita
 • Tamanho do array menor que o índice da esquerda
+
