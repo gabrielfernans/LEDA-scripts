@@ -27,17 +27,17 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 		}
 	}
 
-	private void mergeSort(T[] array, int inicio, int meio, int fim) {
+	private void mergeSort(T[] array, int leftIndex, int meio, int rightIndex) {
 		// Copia tudo para o array auxiliar
-		T[] copia = Arrays.copyOf(array, fim + 1);
+		T[] copia = Arrays.copyOf(array, rightIndex + 1);
 
 		// Define limites de meio para a comparação
-		int metade1 = inicio;
+		int metade1 = leftIndex;
 		int metade2 = meio + 1;
-		int i = inicio;
+		int i = leftIndex;
 
 		// Compara as "duas" listas
-		while (metade1 <= meio && metade2 <= fim) {
+		while (metade1 <= meio && metade2 <= rightIndex) {
 			if (copia[metade1].compareTo(copia[metade2]) < 0) {
 				array[i] = copia[metade1];
 				metade1++;
@@ -55,7 +55,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 			i++;
 		}
 
-		while (metade2 <= fim) {
+		while (metade2 <= rightIndex) {
 			array[i] = copia[metade2];
 			metade2++;
 			i++;
