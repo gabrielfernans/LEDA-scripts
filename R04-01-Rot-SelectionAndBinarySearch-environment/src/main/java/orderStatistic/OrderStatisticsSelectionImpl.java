@@ -57,6 +57,5 @@ public class OrderStatisticsSelectionImpl<T extends Comparable<T>> implements Or
 		}
 		
 		return getOrderStatistics(array, k, minAmount + 1, min, maxIndex);
-
 	}
 }
