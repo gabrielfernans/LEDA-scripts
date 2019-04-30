@@ -13,10 +13,11 @@ public class QueueImpl<T> implements Queue<T> {
 
 	@Override
 	public T head() {
-		if (this.isEmpty()) {
-			return null;
+		T front = null;
+		if (!this.isEmpty()) {
+			front = this.array[0];
 		}
-		return array[0];
+		return front;
 	}
 
 	@Override
@@ -26,17 +27,14 @@ public class QueueImpl<T> implements Queue<T> {
 
 	@Override
 	public boolean isFull() {
-		return this.tail == array.length - 1;
+		return this.tail == this.array.length - 1;
 	}
 
 	private void shiftLeft() {
-		
-		T aux;
-		for (int i = 0; i < array.length - 1; i++) {
-			aux = array[i+1];
-			array[i] = aux;
+		for (int i = 0; i < this.tail; i++) {
+			this.array[i] = this.array[i+1];
 		}
-		this.tail -= 1;
+		this.tail --;
 	}
 
 	@Override
@@ -57,7 +55,7 @@ public class QueueImpl<T> implements Queue<T> {
 			throw new QueueUnderflowException();
 		}
 		
-		T element = array[0];
+		T element = this.head();
 		
 		this.shiftLeft();
 		

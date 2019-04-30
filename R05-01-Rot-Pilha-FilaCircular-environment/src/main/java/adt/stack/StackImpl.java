@@ -13,11 +13,12 @@ public class StackImpl<T> implements Stack<T> {
 
 	@Override
 	public T top() {
+		T peak = null;
 		
-		if (this.isEmpty()) {
-			return null;
+		if (!this.isEmpty()) {
+			peak = this.array[this.top];
 		}
-		return array[top];
+		return peak;
 	}
 
 	@Override
@@ -35,9 +36,11 @@ public class StackImpl<T> implements Stack<T> {
 		if (this.isFull()) {
 			throw new StackOverflowException();
 		}
-		this.top += 1;
-		this.array[top] = element;
 		
+		if (element != null) {
+			this.top += 1;
+			this.array[top] = element;
+		}
 	}
 
 	@Override
@@ -45,8 +48,9 @@ public class StackImpl<T> implements Stack<T> {
 		if (this.isEmpty()) {
 			throw new StackUnderflowException();
 		}
-		this.top -= 1;
-		return array[top + 1];		
+		T peak = this.top();
+		this.top --;
+		return peak;
 	}
 
 }
