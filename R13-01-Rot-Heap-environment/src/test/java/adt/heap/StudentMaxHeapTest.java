@@ -20,7 +20,7 @@ public class StudentMaxHeapTest {
 		// TODO Instancie seu comparator para fazer sua estrutura funcionar como
 		// uma max heap aqui. Use instanciacao anonima da interface
 		// Comparator!!!!
-		Comparator<Integer> comparator = null;
+		Comparator<Integer> comparator = (o1, o2) -> o1 - o2;
 		heap = new HeapImpl<Integer>(comparator);
 	}
 
