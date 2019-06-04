@@ -85,14 +85,14 @@ public class AVLCountAndFillImpl<T extends Comparable<T>> extends
 				public void run() {
 					quickInsert(array, leftIndex, middle - 1);
 				}
-				});
+			});
 
 			Thread secondThread = new Thread(new Runnable() {
 				@Override
 				public void run() {
 					quickInsert(array, middle + 1, rightIndex);
 				}
-				});
+			});
 			thread.start();
 			secondThread.start();
 		}
