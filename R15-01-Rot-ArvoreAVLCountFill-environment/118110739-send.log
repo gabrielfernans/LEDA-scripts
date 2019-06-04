@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-03T16:16:13.424-0300</date>
+  <logger>GABRIEL FERNANDES DA COSTA</logger>
+  <level>FINE</level>
+  <message>File 118110739-GABRIEL FERNANDES DA COSTA.zip was received. It was sent by GABRIEL FERNANDES DA COSTA from IP 192.168.1.4 at 03-06-2019 16*16*13</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-03T22:31:36.112-0300</date>
+  <logger>GABRIEL FERNANDES DA COSTA</logger>
+  <level>FINE</level>
+  <message>File 118110739-GABRIEL FERNANDES DA COSTA.zip was received. It was sent by GABRIEL FERNANDES DA COSTA from IP 192.168.1.2 at 03-06-2019 22*31*36</message>
+</record>
