@@ -26,43 +26,39 @@ public class BTreeImpl<T extends Comparable<T>> implements BTree<T> {
 	}
 
 	private int height(BNode<T> node) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		int result = -1;
+		return result;
 	}
 
 	@Override
 	public BNode<T>[] depthLeftOrder() {
-		// TODO Implement your code here
 		throw new UnsupportedOperationException("Not Implemented yet!");
 	}
 
 	@Override
 	public int size() {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		int result = -1;
+		return result;
 	}
 
 	@Override
 	public BNodePosition<T> search(T element) {
-		// TODO Implement your code here
 		throw new UnsupportedOperationException("Not Implemented yet!");
 	}
 
 	@Override
 	public void insert(T element) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
 
 	}
 
 	private void split(BNode<T> node) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		int mediana = node.size() / 2;
+		
+		
 	}
 
 	private void promote(BNode<T> node) {
-		// TODO Implement your code here
-		throw new UnsupportedOperationException("Not Implemented yet!");
+		
 	}
 
 	// NAO PRECISA IMPLEMENTAR OS METODOS ABAIXO
